@@ -1,0 +1,87 @@
+/*** estilos gerais ***/
+#transt{
+    justify-content: center;
+}
+.clear{
+    clear: both;
+}
+
+/*** transition 1 ***/
+#transition{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    float: left;
+}
+#transition:hover{
+    background-color: aqua;
+}
+
+/*** transition2***/ 
+#transition2{
+    background-color: chartreuse;
+    width: 100px;
+    height:100px;
+    float: left;
+}
+#transition2:hover{
+    background-color: darkblue;
+}
+#transition2{
+    transition: background-color 5s;
+    float: left;
+}
+
+/*** transiton size ***/
+#transisize{
+    background-color: darkgreen;
+    width: 100px;
+    height: 100px;
+    transition: transform 0.2s;
+    float: left;
+}
+#transisize:hover{
+    transform: scale(1.5);
+}
+
+/*** transition rotage ***/
+#transirotage{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    transition: transform 0.5s;
+    float: left;
+}
+#transirotage:hover{
+    transform: rotateZ(189deg);
+}
+
+/*** delay ***/
+#delay{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    transition: width 1s 0.5s, heigth 1s 1s;
+}
+#delay:hover{
+    width: 200px;
+    height: 200px;
+}
+
+/*** checked ***/
+#checkbox{
+    width: 50px;
+    height: 50px;
+    transition: transform 1s;
+}
+#checkbox:checked{
+    transform: rotateY(360deg);
+}
+#radio{
+    width: 50px;
+    height: 50px;
+    transition: transform 1s;
+}
+#radio:checked{
+    transform: scale(1.25);
+}
